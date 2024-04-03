@@ -23,17 +23,17 @@ public class GameManager : MonoBehaviour
     // Singleton
     public static GameManager instance;
 
+    // Added variables to control win/lose conditions
+    public int wavesToWin = 5; // Number of waves required to win
+    public int wavesToGameOver = 10; // Number of waves before game over
+
     void OnEnable ()
     {
-        // Changed event listener from Enemy's OnEnemyDestroyed event to the WaveSpawner OnEnemyRemoved event.
-        //Enemy.OnDestroyed += OnEnemyDestroyed;
         waveSpawner.OnEnemyRemoved.AddListener(OnEnemyDestroyed);
     }
 
     void OnDisable ()
     {
-        // Changed event listener from Enemy's OnEnemyDestroyed event to the WaveSpawner OnEnemyRemoved event.
-        //Enemy.OnDestroyed -= OnEnemyDestroyed;
         waveSpawner.OnEnemyRemoved.RemoveListener(OnEnemyDestroyed);
     }
 
@@ -99,7 +99,10 @@ public class GameManager : MonoBehaviour
 
         if(waveSpawner.remainingEnemies == 0 && waveSpawner.curWave == waveSpawner.waves.Length)
         {
-            WinGame();
+            if (waveSpawner.curWave >= wavesToWin)
+                WinGame();
+            else if (waveSpawner.curWave >= wavesToGameOver)
+                GameOver();
         }
     }
 }

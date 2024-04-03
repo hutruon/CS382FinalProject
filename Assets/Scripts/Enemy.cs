@@ -64,4 +64,9 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+     public void SetSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
 }

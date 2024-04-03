@@ -11,7 +11,7 @@ public class WaveData : ScriptableObject
     public class EnemySet
     {
         public GameObject enemyPrefab;
-        public int spawnCount;
+        public int spawnCount = 3;
         public float spawnDelay;
         public float spawnRate;
     }
