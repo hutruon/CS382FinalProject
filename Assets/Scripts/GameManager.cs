@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -80,9 +81,10 @@ public class GameManager : MonoBehaviour
 
     void GameOver ()
     {
-        gameActive = false;
-        endScreen.gameObject.SetActive(true);
-        endScreen.SetEndScreen(false, waveSpawner.curWave);
+        // gameActive = false;
+        // endScreen.gameObject.SetActive(true);
+        // endScreen.SetEndScreen(false, waveSpawner.curWave);
+        SceneManager.LoadScene("EndScreen");
     }
 
     void WinGame ()
@@ -90,6 +92,7 @@ public class GameManager : MonoBehaviour
         gameActive = false;
         endScreen.gameObject.SetActive(true);
         endScreen.SetEndScreen(true, waveSpawner.curWave);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void OnEnemyDestroyed ()
@@ -100,9 +103,11 @@ public class GameManager : MonoBehaviour
         if(waveSpawner.remainingEnemies == 0 && waveSpawner.curWave == waveSpawner.waves.Length)
         {
             if (waveSpawner.curWave >= wavesToWin)
-                WinGame();
+                // WinGame();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             else if (waveSpawner.curWave >= wavesToGameOver)
                 GameOver();
+                
         }
     }
 }
