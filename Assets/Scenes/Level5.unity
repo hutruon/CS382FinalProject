@@ -18527,20 +18527,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: db33f04f138afc442aa5803b023154ca, type: 2}
+  - {fileID: 11400000, guid: db33f04f138afc442aa5803b023154ca, type: 2}
   - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
   - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
-  - {fileID: 11400000, guid: f94d93c21781d36448216819579735da, type: 2}
+  - {fileID: 11400000, guid: b15fcc7c63d34ce45b21935b3b88bdf3, type: 2}
+  - {fileID: 11400000, guid: b15fcc7c63d34ce45b21935b3b88bdf3, type: 2}
+  - {fileID: 11400000, guid: b15fcc7c63d34ce45b21935b3b88bdf3, type: 2}
+  - {fileID: 11400000, guid: 2c0d45ac38b78804a93089e501e00caa, type: 2}
+  - {fileID: 11400000, guid: 2c0d45ac38b78804a93089e501e00caa, type: 2}
+  - {fileID: 11400000, guid: 2c0d45ac38b78804a93089e501e00caa, type: 2}
+  - {fileID: 11400000, guid: 2c0d45ac38b78804a93089e501e00caa, type: 2}
+  - {fileID: 11400000, guid: 1e134f4bdfc8ca1429435a7841c0c7d2, type: 2}
+  - {fileID: 11400000, guid: 1e134f4bdfc8ca1429435a7841c0c7d2, type: 2}
+  - {fileID: 11400000, guid: 1e134f4bdfc8ca1429435a7841c0c7d2, type: 2}
+  - {fileID: 11400000, guid: 1e134f4bdfc8ca1429435a7841c0c7d2, type: 2}
   curWave: 0
   wavesPerLevel: 15
   baseEnemySpeed: 3
